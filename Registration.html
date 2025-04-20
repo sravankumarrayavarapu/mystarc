@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REGISTRATIONFORM</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .header {
+            background-color: #808080;
+            color: white;
+            padding: 1em 0;
+            text-align: center;
+            margin-bottom: 20px;
+            width: 100%;
+            position: fixed;
+            top: 0;
+        }
+
+        .header a {
+            color: #f4f4f4;
+            text-decoration: none;
+            margin-left: 20px;
+        }
+
+        .form {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 80%;
+            max-width: 600px;
+        }
+
+        .form label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        .form input[type="text"],
+        .form input[type="email"],
+        .form input[type="password"],
+        .form input[type="tel"],
+        .form input[type="date"],
+        .form select,
+        .form input[type="file"] {
+            width: calc(100% - 16px);
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        .form ul {
+            list-style-type: none;
+            padding: 0;
+            margin-bottom: 10px;
+        }
+
+        .form li {
+            margin-right: 15px;
+            display: inline;
+        }
+
+        .form input[type="radio"] {
+            margin-right: 5px;
+        }
+
+        .form input[type="submit"],
+        .form input[type="reset"] {
+            background-color: #0000FF;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 1em;
+            margin-right: 10px;
+        }
+
+        .form input[type="submit"]:hover {
+            background-color: #0000CD;
+        }
+
+        .form input[type="reset"] {
+            background-color: #0000FF;
+        }
+
+        .form input[type="reset"]:hover {
+            background-color: #0000CD;
+        }
+
+        .footer {
+            background-color: #808080;
+            color: white;
+            text-align: center;
+            padding: 1em 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body class="body">
+    <header class="header">
+        <h1>REGISTRATION FORM</h1>
+        <a href='/'>HOME</a>
+    </header>
+    <div class="form">
+        <form>
+            <label for="firstname">First Name:</label>
+            <input type="text" id="firstname" class="firstname" placeholder="first name"><br>
+
+            <label for="secondname">Second Name:</label>
+            <input type="text" id="secondname" class="secondname" placeholder="second name"><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" class="email" placeholder="email"><br>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" class="password" placeholder="password"><br>
+
+            <label for="phoneno">Phone No:</label>
+            <input type="tel" id="phoneno" class="phoneno" placeholder="phone no"><br>
+
+            <label for="DOB">Date of Birth:</label>
+            <input type="date" id="DOB" class="DOB" placeholder="date of birth"><br>
+
+            <label>Gender:</label>
+            <ul>
+                <li><input type="radio" name="gender" value="male"> Male</li>
+                <li><input type="radio" name="gender" value="female"> Female<br></li>
+            </ul>
+
+            <label for="hobbies">Hobbies:</label>
+            <input type="text" id="hobbies" class="hobbies" placeholder="hobbies"><br>
+
+            <label for="studies">Qualification:</label>
+            <select name="studies" id="studies">
+                <option value="10th">10th</option>
+                <option value="12th">12th</option>
+                <option value="Graduation">Graduation</option>
+                <option value="Post Graduation">Post Graduation</option>
+            </select><br>
+
+            <label for="file">File:</label>
+            <input type="file" id="file"><br>
+
+            <label for="address">Address:</label>
+            <input type="text" id="address" class="address" placeholder="address"><br>
+
+            <label for="city">City:</label>
+            <input type="text" id="city" class="city" placeholder="city"><br>
+
+            <label for="state">State:</label>
+            <input type="text" id="state" class="state" placeholder="state"><br>
+
+            <label for="country">Country:</label>
+            <input type="text" id="country" class="country" placeholder="country"><br>
+
+            <label for="pincode">pincode Code:</label>
+            <input type="text" id="pincode" class="pincode" placeholder="pincode"><br>
+
+            <input type="submit" class="submit" value="Submit">
+            <input type="reset" class="reset" value="Reset">
+        </form>
+    </div>
+    <div class="footer">
+        Footer
+    </div>
+</body>
+</html>

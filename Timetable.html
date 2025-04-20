@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Timetable</title>
+<style>
+  body {
+    font-family: sans-serif;
+  }
+  center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  h2 {
+    margin-bottom: 10px;
+  }
+  table {
+    width: 90%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  th, td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+    font-size: 0.9em;
+  }
+  th {
+    background-color: #f8f8f8;
+    font-weight: bold;
+  }
+  thead tr:first-child th {
+    background-color: #333;
+    color: white;
+  }
+  thead tr:nth-child(2) th:first-child {
+    background-color: #f8f8f8;
+    color: black;
+  }
+  .lunch-row td {
+    background-color: #eee;
+  }
+  .color-1 { background-color: #a8dadc; color: #1d3557; } /* Light Blue / Dark Blue */
+  .color-2 { background-color: #457b9d; color: #f1faee; } /* Medium Blue / Light Cream */
+  .color-3 { background-color: #e63946; color: #f1faee; } /* Red / Light Cream */
+  .color-4 { background-color: #f4a261; color: #3d405b; } /* Orange / Dark Grey */
+
+  .pai, .full-stack { background-color: #a8dadc; color: #1d3557; } /* Color 1 */
+  .sds, .dlco { background-color: #457b9d; color: #f1faee; } /* Color 2 */
+  .dti, .weekly-test, .mefa { background-color: #e63946; color: #f1faee; } /* Color 3 */
+  .ids, .vs, .coun, .sports, .ia, .lib, .ids-lab, .pai-lab { background-color: #f4a261; color: #3d405b; } /* Color 4 */
+</style>
+</head>
+<body>
+
+<center>
+  <h2>Timetable</h2>
+  <p style="text-align: right;">w.e.f : 03.02.2025</p>
+  <table>
+    <thead>
+      <tr>
+        <th colspan="5">SECTION 2</th>
+        <th colspan="4"></th>
+      </tr>
+      <tr>
+        <th>Time/Day</th>
+        <th>10:00-10:50</th>
+        <th>10:50-11:40</th>
+        <th>11:40-12:30</th>
+        <th>12:30-1:20</th>
+        <th>L<br>U<br>N<br>C<br>H</th>
+        <th>2:00-3:00</th>
+        <th>3:00-3:50</th>
+        <th>4:00-4:50</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th>MON</th>
+        <td class="color-1">PAI</td>
+        <td class="color-1">FULL STACK (AB-04)</td>
+        <td class="color-1">FULL STACK (AB-04)</td>
+        <td class="color-2">SDS</td>
+        <td rowspan="6" class="lunch-row"></td>
+        <td class="color-4" colspan="2">IDS LAB (AB-05)</td>
+        <td></td>
+      </tr>
+      <tr>
+        <th>TUE</th>
+        <td class="color-2">DLCO</td>
+        <td class="color-1">PAI</td>
+        <td class="color-3">MEFA</td>
+        <td class="color-3">DTI</td>
+        <td class="color-2">DLCO</td>
+      </tr>
+      <tr>
+        <th>WED</th>
+        <td class="color-3">WEEKLY TEST</td>
+        <td class="color-3">MEFA</td>
+        <td class="color-4">IDS</td>
+        <td class="color-3">DTI</td>
+        <td class="color-4">COUN</td>
+      </tr>
+      <tr>
+        <th>THU</th>
+        <td class="color-2">SDS</td>
+        <td class="color-4">Vs</td>
+        <td class="color-2">DLCO</td>
+        <td class="color-4">IDS</td>
+        <td class="color-4">SPORTS</td>
+      </tr>
+      <tr>
+        <th>FRI</th>
+        <td class="color-3">MEFA</td>
+        <td class="color-2">SDS</td>
+        <td class="color-1">PAI</td>
+        <td class="color-4">IDS</td>
+        <td class="color-4" colspan="2">PAI LAB (AB-05)</td>
+        <td></td>
+      </tr>
+      <tr>
+        <th>SAT</th>
+        <td class="color-2">DLCO</td>
+        <td class="color-4">IA</td>
+        <td class="color-2">SDS</td>
+        <td class="color-4">IDS</td>
+        <td class="color-2">SDS</td>
+        <td class="color-3">MEFA</td>
+        <td class="color-4">LIB</td>
+      </tr>
+    </tbody>
+  </table>
+</center>
+
+</body>
+</html>
